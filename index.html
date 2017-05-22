@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转木马 幻灯片开发</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/carousel.js"></script>
+</head>
+<body>
+	<div class="J-Poster poster-main" data-setting='{
+													"width" : 900,
+													"height" : 270,
+													"posterWidth" : 640,
+													"posterHeight" : 270,
+													"verticalAlign" : "middle",
+													"scale" : 0.9,
+													"speed" : 500
+													}'>
+		<div class="poster-btn poster-prev-btn"></div>
+		<ul class="poster-list">
+			<li class="poster-item"><a href=""><img src="images/1.jpg"></a></li>
+			<li class="poster-item"><a href=""><img src="images/2.jpg"></a></li>
+			<li class="poster-item"><a href=""><img src="images/3.jpg"></a></li>
+			<li class="poster-item"><a href=""><img src="images/4.jpg"></a></li>
+			<li class="poster-item"><a href=""><img src="images/5.jpg"></a></li>
+			<li class="poster-item"><a href=""><img src="images/6.jpg"></a></li>
+		</ul>
+		<div class="poster-btn poster-next-btn"></div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	$(function(){
+		Carousel.init($(".J-Poster"))
+	})
+</script>
